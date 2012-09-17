@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(img/patterrific_patt_8blackdots01.jpg);
+	background-color: #F5F5F5;
+	
+}
+div.lineimg
+	
+{
+	background-image: url(img2/line.png);
+	height: 1px;
+	clear: both;
+}
+div#top
+{
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+div#top h1{
+	font-size: 0.74em;
+	color: #999;
+	line-height: 0.74em;
+}
+div#center
+{
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div#titlebar
+{
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #666;
+	background-image: url(img2/img2.png);
+	height: 80px;
+	margin-bottom: 0px;
+	padding: 0px;
+	line-height: 0px;
+	vertical-align: bottom;
+}
+div#titlebar img
+{
+	float:left;
+	margin-bottom: 0px;
+	padding: 0px;
+	line-height: 0px;
+	vertical-align: bottom;
+}
+div#toOfficial
+{
+	float: right;
+}
+nav
+{
+	background-image: url(img2/menubar.png);
+	background-repeat: repeat-x;
+	height: 50px;
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+}
+div#menucontents
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 950px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+div#menucontents ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+div#menucontents ul li
+{
+	list-style-type: none;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+div#menucontents ul li a
+{
+	display:block;
+	line-height: 50px;
+	font-size:0.8em;
+	text-decoration:none;
+	text-align:center;
+	color:#FFFFFF;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-right: 20px;
+}
+div#menucontents ul li a:hover
+{
+	color:#333;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+div#grey
+{
+	background-color: #B6B6B6;
+}
+article
+{
+	width: 950px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color:#FFF;
+}
+aside
+{
+	float: right;
+	background-color: #E6E6E6;
+	width: 200px;
+	padding: 5px
+}
+aside h1
+{
+	font-size: 1em;
+	font-family: "�??�?��?��??�?�?� Pro W3", "Hiragino Kaku Gothic Pro", "�?��?��?��?�", Meiryo, Osaka, "ＭＳ Ｐ�?��?��??�?�", "MS PGothic", sans-serif;
+	background-image: none;
+}
+aside h2
+{
+	font-size: 0.75em;
+}
+aside p
+{
+}
+div#contents
+{
+	width: 700px;
+	float: left;
+	background-color: #e4ffc9;
+	font-size: 0.8em;
+	margin: auto;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 70px;
+	padding-left: 20px;
+}
+div#contents h1
+{
+	text-indent: 40px;
+	color: #090;
+	font-size: 4ex;
+}
+
+div#contents img
+{
+	border:none
+}
+div.imgs
+{
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+div.imgs img
+{
+	padding-right: 30px;
+}
+div#article_div
+{
+	background-color: #f1ffd8;
+	padding: 5px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}
+div#article_div p
+{
+	padding-left: 50px;
+	
+}
+div.show
+{
+}
+address
+{
+	margin-right: auto;
+	margin-left: auto;
+	width: 950px;
+	text-align: center;
+	font-family: "�??�?��?��??�?�?� Pro W3", "Hiragino Kaku Gothic Pro", "�?��?��?��?�", Meiryo, Osaka, "ＭＳ Ｐ�?��?��??�?�", "MS PGothic", sans-serif;
+	font-size: 0.7em;
+}

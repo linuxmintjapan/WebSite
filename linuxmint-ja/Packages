@@ -1,0 +1,48 @@
+Package: mint-gnome-ja
+Priority: optional
+Section: metapackages
+Installed-Size: 52
+Maintainer: s.sach <sach@infoseek.jp>
+Architecture: all
+Version: 13-01
+Depends: language-pack-ja, language-pack-gnome-ja, fonts-takao-gothic, fonts-takao-mincho, fonts-takao-pgothic, fonts-vlgothic, fonts-ipafont-gothic, fonts-ipafont-mincho, libreoffice-l10n-ja, libreoffice-help-ja, firefox-locale-ja, manpages-ja, thunderbird-locale-ja, ibus-mozc, ibus-anthy, kasumi, ibus-gtk, ibus-gtk3, poppler-data, cmap-adobe-japan1
+Filename: ./mint-gnome-ja_13-01_all.deb
+Size: 1342
+MD5sum: 67fb67f0a33c48e2075be45d0f7c5da3
+SHA1: 0f5cfbaa0b49f4bda17e8959f9f737b1f2d31974
+SHA256: 8c72a0a9ce1bd4dfda17bf82f5054e1ec9366e8636b7d7160ed1cb24b0a752b1
+Description: Japanese metapackege for LinuxMint
+ .
+
+Package: mint-kde-ja
+Priority: optional
+Section: metapackages
+Installed-Size: 52
+Maintainer: s.sach <sach@infoseek.jp>
+Architecture: all
+Version: 13-01
+Depends: kde-l10n-ja, language-pack-ja, language-pack-kde-ja, fonts-takao, fonts-vlgothic, fonts-ipafont, libreoffice-l10n-ja, libreoffice-help-ja, firefox-locale-ja, manpages-ja, ibus-mozc, ibus-anthy, kasumi, ibus-gtk, ibus-gtk3, ibus-qt4, poppler-data, cmap-adobe-japan1, gnome-icon-theme
+Filename: ./mint-kde-ja_13-01_all.deb
+Size: 1380
+MD5sum: 4ce1ded065bb09db9a92ed61bccf59f2
+SHA1: b99ae693b1447a2d93396f0d4fc43bfdf059c5d1
+SHA256: 24b34bb5a4c661d08d5c345674fa0cf4c699207845eb2061d5b5f8ca2d6b7139
+Description: Japanese metapackege for LinuxMint
+ .
+
+Package: mint-lmde-ja
+Priority: optional
+Section: metapackages
+Installed-Size: 68
+Maintainer: s.sach <sach@infoseek.jp>
+Architecture: all
+Version: 201204-01
+Depends: fonts-takao, fonts-vlgothic, fonts-ipafont, libreoffice-l10n-ja, libreoffice-help-ja, firefox-l10n-ja, manpages-ja, thunderbird-l10n-ja, ibus-mozc, ibus-anthy, kasumi, ibus-gtk, ibus-gtk3, poppler-data, cmap-adobe-japan1
+Filename: ./mint-lmde-ja_201204-01_all.deb
+Size: 2168
+MD5sum: 419bcf1ee709434e70338673a47b5b0d
+SHA1: 702916805c73cf27c492e23f1e885e827c31abf5
+SHA256: cc8fee040355226351e4889d3c583edb66f879953d57ac6d272ac36c93392318
+Description: Japanese metapackege for LinuxMint
+ .
+

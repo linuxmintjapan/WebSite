@@ -1,0 +1,20 @@
+Architectures: all source
+Codename: maya
+Components: main contrib non-free
+Date: Sun, 09 Sep 2012 05:57:31 UTC
+Description: Official packages
+Label: released
+Origin: released
+Suite: stable
+MD5Sum:
+ b4da8cf8c2e713d61f42e2cb229bf061             2131 Packages
+ 1acdb7c20c1409051d72985c5f744cbd              777 Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 Release
+SHA1:
+ e797fa1d8ceb5bfb9754b8ec55a90e82ac3d38f3             2131 Packages
+ 6bb9c4b7063c4d972abc01ae062c0b28128e41e4              777 Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Release
+SHA256:
+ b9441cf123423d350cf9903114f09d905f45c54854b73fc06ceab2cc8f86bc4b             2131 Packages
+ 6e7c06e7c17fe8e5de23811a31fff3e5e3130b2dd76be1639e8fb7a910cc0679              777 Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Release
