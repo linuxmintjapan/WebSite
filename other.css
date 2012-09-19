@@ -23,8 +23,10 @@ div#top
 	margin-bottom: 0px;
 	padding: 0px;
 }
-div#top h1{
+div#top p
+{
 	font-size: 0.74em;
+	font-weight: bold;
 	color: #999;
 	line-height: 0.74em;
 }
