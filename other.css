@@ -284,3 +284,10 @@ footer
 	clear: both;
 	border-top: dashed 2px #999999;
 }
+
+div#contents h1.title
+{
+	border-bottom: solid 2px #009900;
+	width: 40%;
+	font-size: 3em;
+}
