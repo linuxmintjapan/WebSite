@@ -200,10 +200,17 @@ div#contents
 }
 div#contents h1
 {
+	border-bottom: solid 2px #009900;
+	width: 40%;
+	color: #090;
+	font-size: 3em;
+}
+div#contents h2
+{
 	color: #090;
 	font-size: 1.5em;
 }
-div#contents h2
+div#contents h3
 {
 	color: #090;
 	font-size: 1.2em;
@@ -285,11 +292,4 @@ footer
 {
 	clear: both;
 	border-top: dashed 2px #999999;
-}
-
-div#contents h1.title
-{
-	border-bottom: solid 2px #009900;
-	width: 40%;
-	font-size: 3em;
 }

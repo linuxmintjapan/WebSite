@@ -157,9 +157,20 @@ div#contents
 }
 div#contents h1
 {
-	text-indent: 40px;
+	border-bottom: solid 2px #009900;
+	width: 40%;
 	color: #090;
-	font-size: 4ex;
+	font-size: 3em;
+}
+div#contents h2
+{
+	color: #090;
+	font-size: 1.5em;
+}
+div#contents h3
+{
+	color: #090;
+	font-size: 1.2em;
 }
 
 div#contents img
@@ -208,11 +219,4 @@ footer
 {
 	clear: both;
 	border-top: dashed 2px #999999;
-}
-
-div#contents h1.title
-{
-	border-bottom: solid 2px #009900;
-	width: 50%;
-	font-size: 3em;
 }
