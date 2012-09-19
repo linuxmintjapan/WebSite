@@ -61,8 +61,7 @@ div#toOfficial
 }
 nav
 {
-	background-image: url(img2/menubar.png);
-	background-repeat: repeat-x;
+	background-color: #339922;
 	height: 50px;
 	clear: both;
 	margin: 0px;
@@ -101,7 +100,8 @@ div#menucontents ul li a
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	margin-top: 0px;
 	padding-top: 0px;
-	margin-right: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 div#menucontents ul li a:hover
 {
@@ -109,7 +109,6 @@ div#menucontents ul li a:hover
 	padding: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 0px;
 }
 div#grey
 {
@@ -201,4 +200,10 @@ address
 	text-align: center;
 	font-family: "�??�?��?��??�?�?� Pro W3", "Hiragino Kaku Gothic Pro", "�?��?��?��?�", Meiryo, Osaka, "ＭＳ Ｐ�?��?��??�?�", "MS PGothic", sans-serif;
 	font-size: 0.7em;
+}
+
+footer
+{
+	clear: both;
+	border-top: dashed 2px #999999;
 }
