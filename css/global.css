@@ -1,0 +1,156 @@
+@import url("http://yui.yahooapis.com/3.7.0/build/cssreset/cssreset-min.css");
+@import url("http://yui.yahooapis.com/3.7.0/build/cssbase/cssbase-min.css");
+@import url("http://yui.yahooapis.com/3.7.0/build/cssfonts/cssfonts-min.css");
+@import url("style.css");
+/*
+@import url("../css.css");
+@import url("../other.css");
+*/
+body {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	background: #E4FFC9;
+}
+h1 {
+	border-bottom: 2px solid #009900;
+	width: 40%;
+	color: #009900;
+	font-size: 2.5em;
+}
+h2 {
+	color: #009900;
+	font-size: 2em;
+}
+h3 {
+	color: #009900;
+	font-size: 1.5em;
+}
+img {
+	border: none;
+}
+pre {
+	background-color: #E6E6E6;
+	padding: 1em;
+	margin: 1em;
+}
+dt {
+	font-weight: bold;
+}
+#top {
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+#top p {
+	margin: 0;
+	font-weight: bold;
+}
+#titlebar {
+	background-image: url("../img2/img2.png");
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	clear: both;
+}
+#titlebar img {
+	height: 80px;
+}
+#menucontents {
+	background-color: #339922;
+	height: 4em;
+	margin: 0;
+	padding: 0;
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+#menucontents ul {
+	padding: 0;
+	margin: 0;
+}
+#menucontents ul li {
+	background-color: #339922;
+	float: left;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+#menucontents ul li a {
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding: 1em 0.5em;
+	display: block;
+}
+#menucontents ul li a:hover {
+	background-color: #993322;
+}
+#contents {
+	margin: 0;
+	padding: 0;
+	display: block;
+	clear: both;
+}
+section {
+	margin: 0;
+	padding: 0;
+	display: block;
+	clear: both;
+}
+section.item
+{
+	clear: both;
+	padding-top: 1em;
+}
+.rightblock
+{
+	float: right;
+	display: block;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+.leftblock
+{
+	float: left;
+	display: block;
+	padding-right: 1em;
+	padding-bottom: 1em;
+}
+
+.centerblock
+{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 1em;
+}
+footer
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	clear: both;
+	border-top: dashed 2px #999999;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer address
+{
+	text-align: center;
+}
+div.article_div {
+	background-color: #F1FFD8;
+	padding: 1em;
+	margin: 1em;
+}
+
+aside {
+	float: right;
+	width: 20%;
+	background: #E6E6E6;
+	padding: 1em;
+}
