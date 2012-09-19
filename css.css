@@ -176,7 +176,7 @@ div.imgs img
 {
 	padding-right: 30px;
 }
-div#article_div
+div.article_div
 {
 	background-color: #f1ffd8;
 	padding: 5px;
@@ -185,7 +185,7 @@ div#article_div
 	margin-bottom: 20px;
 	margin-left: 5px;
 }
-div#article_div p
+div.article_div p
 {
 	padding-left: 50px;
 	
