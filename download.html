@@ -20,7 +20,7 @@
     </div>
     <div id="titlebar">
       <a href="index.html">
-        <img width="250" alt="Linux Mint logo" src="img/mint-logo-white-bg2.png" style="border:none" height="80"/>
+        <img alt="Linux Mint logo" src="img/mint-logo-white-bg2.png"/>
       </a>
     </div>
     <nav id="menucontents">
@@ -68,16 +68,16 @@
       <p>ライセンス:  <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License version 3.0 (GPLv3)</a></p>
       <p>
         <a href="isoimage/linuxmint-13-ja-mate-dvd-nocodecs-32bit.iso">
-          <img width="220" alt="MATE 32 ビット" src="img2/mate32.png" style="border:none" height="79"/>
+          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/mate32.png"/>
         </a>
         <a href="&#9;isoimage/linuxmint-13-ja-mate-dvd-nocodecs-64bit.iso">
-          <img width="220" alt="MATE 32 ビット" src="img2/mate64.png" style="border:none" height="79"/>
+          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/mate64.png"/>
         </a>
         <a href="isoimage/linuxmint-13-ja-cinnamon-dvd-nocodecs-32bit.iso">
-          <img width="220" alt="MATE 32 ビット" src="img2/Cinnamon32.png" style="border:none" height="79"/>
+          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/Cinnamon32.png"/>
         </a>
         <a href="&#9;isoimage/linuxmint-13-ja-cinnamon-dvd-nocodecs-64bit.iso">
-          <img width="220" alt="MATE 32 ビット" src="img2/Cinnamon64.png" style="border:none" height="79"/>
+          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/Cinnamon64.png"/>
         </a>
       </p>
       <dl>
@@ -95,24 +95,24 @@
       <p>本家サイトからの Linux Mint ISO をダウンロードした場合、日本語化がまだ不十分です。そういった場合 Linux Mint Japan の追加パッケージを利用し、日本語化パッケージをインストールすることによってそれらの問題は解決されることがあります。</p>
       <h3>インストール方法</h3>
       <p>まず端末上でこれらのコマンドを実行してください。  </p>
-      <pre>wget -q http://linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
-sudo wget http://linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
-sudo apt-get update
-sudo apt-get dist-upgrade
+      <pre># wget -q http://linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
+# sudo wget http://linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
+# sudo apt-get update
+# sudo apt-get dist-upgrade
 </pre>
       <p>次に自分の Linux Mint のエディションにあわせて適切なコマンドを実行して下さい。</p>
       <dl>
         <dt>MATE, Cinnamon, Xfce の場合</dt>
         <dd>
-          <pre>sudo apt-get install mint-gnome-ja</pre>
+          <pre># sudo apt-get install mint-gnome-ja</pre>
         </dd>
         <dt>KDE の場合</dt>
         <dd>
-          <pre>sudo apt-get install mint-kde-ja</pre>
+          <pre># sudo apt-get install mint-kde-ja</pre>
         </dd>
         <dt>LMDE の場合</dt>
         <dd>
-          <pre>sudo apt-get install mint-lmde-ja</pre>
+          <pre># sudo apt-get install mint-lmde-ja</pre>
         </dd>
       </dl>
     </article>

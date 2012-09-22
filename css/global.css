@@ -6,16 +6,13 @@
 @import url("../css.css");
 @import url("../other.css");
 */
-body {
+html {
 	max-width: 1400px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1em;
-	background: #E4FFC9;
 }
 h1 {
 	border-bottom: 2px solid #009900;
-	width: 40%;
 	color: #009900;
 	font-size: 2.5em;
 }
@@ -29,11 +26,15 @@ h3 {
 }
 img {
 	border: none;
+	width: 100%;
 }
 pre {
 	background-color: #E6E6E6;
 	padding: 1em;
 	margin: 1em;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 dt {
 	font-weight: bold;
@@ -55,24 +56,26 @@ dt {
 	clear: both;
 }
 #titlebar img {
-	height: 80px;
+	max-width: 243px;
 }
 #menucontents {
 	background-color: #339922;
-	height: 4em;
 	margin: 0;
 	padding: 0;
+	float: left;
 	display: block;
 	clear: both;
-	margin: 0;
-	padding: 0;
+	width: 100%;
 }
 #menucontents ul {
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	float: left;
+	display: block;
+	clear: both;
+	vertical-align: middle;
 }
 #menucontents ul li {
-	background-color: #339922;
 	float: left;
 	list-style-type: none;
 	padding: 0;
@@ -89,11 +92,27 @@ dt {
 #menucontents ul li a:hover {
 	background-color: #993322;
 }
-#contents {
+.lof-main-wapper{
 	margin: 0;
 	padding: 0;
+	float: left;
 	display: block;
 	clear: both;
+}
+.lof-slidecontent{
+	width: 100%;
+}
+#contents {
+	padding-left: 1em;
+	padding-right: 1em;
+	float: left;
+	display: block;
+	clear: both;
+}
+aside {
+	padding-left: 1em;
+	padding-right: 1em;
+	background: #E6E6E6;
 }
 section {
 	margin: 0;
@@ -126,7 +145,6 @@ section.item
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-	padding: 1em;
 }
 footer
 {
@@ -145,12 +163,25 @@ footer address
 div.article_div {
 	background-color: #F1FFD8;
 	padding: 1em;
-	margin: 1em;
+	margin-bottom: 1em;
 }
-
-aside {
+.columnA {
+	float: left;
+	width: 73%;
+}
+.columnB {
 	float: right;
 	width: 20%;
-	background: #E6E6E6;
-	padding: 1em;
+}
+@media screen and (max-width: 500px) {
+	.columnA {
+		clear: both;
+		float: left;
+		width: auto;
+	}
+	.columnB {
+		clear: both;
+		float: left;
+		width: auto;
+	}
 }
