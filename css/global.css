@@ -6,6 +6,9 @@
 @import url("../css.css");
 @import url("../other.css");
 */
+body {
+	background: #FFFFFF;
+}
 html {
 	max-width: 950px;
 	margin-left: auto;
