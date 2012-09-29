@@ -7,7 +7,7 @@
 @import url("../other.css");
 */
 html {
-	max-width: 1400px;
+	max-width: 950px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -86,6 +86,7 @@ dt {
 	text-align: center;
 	text-decoration: none;
 	color: white;
+	margin: 0;
 	padding: 1em 0.5em;
 	display: block;
 }
