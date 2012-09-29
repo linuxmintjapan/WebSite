@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>貢献するには | Linux Mint Japan</title>
+    <meta content="index,follow" name="robots"/>
+    <meta content="Linux Mint Japan は公式の Linux Mint ローカルコミュニティとして日本語の情報を発信しています。Wiki、メーリングリスト。日本語ローカライズ版を配布をしています。" name="description"/>
+    <meta content="Linux, Linux Mint, Linux Mint Japan, Maya, Lisa, リナックス, ミント" name="keywords"/>
+    <link rel="stylesheet" href="css/global.css" type="text/css"/>
+    <script src="js/mootools.svn.js" type="text/javascript"></script>
+    <script src="js/lofslidernews.mt11.js" type="text/javascript"></script>
+    <link rel="icon" href="http://www.linuxmint.com/favicon.ico" type="image/png"/>
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <div id="top">
+      <p>Linux Mint 伝統と革新が融合した、使いやすいデスクトップ OS</p>
+    </div>
+    <div id="titlebar">
+      <a href="index.html">
+        <img alt="Linux Mint logo" src="img/mint-logo-white-bg2.png"/>
+      </a>
+    </div>
+    <nav id="menucontents">
+      <ul>
+        <li>
+          <a href="index.html">ホーム</a>
+        </li>
+        <li>
+          <a href="http://blog.linuxmint-jp.net">ブログ</a>
+        </li>
+        <li>
+          <a href="download.html">ダウンロード</a>
+        </li>
+        <li>
+          <a href="feature.html">Linux Mint の特徴</a>
+        </li>
+        <li>
+          <a href="linuxmint.html">Linux Mint とは</a>
+        </li>
+        <li>
+          <a href="community.html">コミュニティ</a>
+        </li>
+        <li>
+          <a href="http://dev.linuxmint-jp.net/index.php/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%82%AC%E3%82%A4%E3%83%89">ユーザーズガイド</a>
+        </li>
+        <li>
+          <a href="forum.html">フォーラム</a>
+        </li>
+        <li>
+          <a href="wiki.html">wiki</a>
+        </li>
+        <li>
+          <a href="FAQ.html">FAQ</a>
+        </li>
+        <li>
+          <a href="contact.html">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <article id="contents">
+      <h1 class="title">貢献するには</h1>
+      <h2>ウェブサイトに対する貢献</h2>
+      <p><a href="http://linuxmint-jp.net/">http://linuxmint-jp.net/</a> 以下に含まれるコンテンツは <a href="https://github.com/linuxmintjapan/WebSite">github 上のリポジトリ</a>で管理されています。コンテンツに修正を加えたい場合は、以下の文書に目を通してください。また、重要かつ大掛かりな修正を行う場合は事前に linuxmint-jp-www@linuxmint-jp.net でその内容を議論してください。</p>
+      <h3>リポジトリのコピーを取る</h3>
+      <p>git リポジトリのコピーをとるには clone または pull します。</p>
+      <p>始めてコピーを取る場合、プロジェクトの git リポジトリを clone します。コンテンツは WebSite ディレクトリの下に含まれています。</p>
+      <pre>
+$ git clone git://github.com/linuxmintjapan/WebSite.git
+Cloning into WebSite...
+remote: Counting objects: 141, done.
+remote: Compressing objects: 100% (109/109), done.
+remote: Total 141 (delta 29), reused 140 (delta 28)
+Receiving objects: 100% (141/141), 7.87 MiB | 856 KiB/s, done.
+Resolving deltas: 100% (29/29), done.
+$ cd WebSite
+</pre>
+      <p>リポジトリに直接 commit するなどの理由で読み書き可能なリポジトリを clone する場合は以下のようにします。リポジトリに対して読み書きを行うにはメンバーの登録が必要です。</p>
+      <pre>
+$ git clone git@github.com:linuxmintjapan/WebSite.git
+Cloning into WebSite...
+Enter passphrase for key '****************************':
+remote: Counting objects: 141, done.
+remote: Compressing objects: 100% (109/109), done.
+remote: Total 141 (delta 29), reused 140 (delta 28)
+Receiving objects: 100% (141/141), 7.87 MiB | 1.08 MiB/s, done.
+Resolving deltas: 100% (29/29), done.
+$ cd WebSite
+</pre>
+      <p>すでにコピーを持っている場合 (過去に clone を行っている場合)、コピーの内容が最新版であることを確認するために pull します。コンフリクトが起きた場合は適宜コンフリクトを解消してください。</p>
+      <pre>
+$ git pull origin
+Already up-to-date.
+</pre>
+      <h3>コンテンツの修正</h3>
+      <p>コンテンツに修正を加えます。以下の例では *.html にマッチするファイルのコピーライト部分に文字参照 &amp;copy; を使うように修正を加えています。編集して (sed -i)、編集したファイルを index に追加して (git add)、編集内容の説明を付けて index の内容をコミットします (git commit)。</p>
+      <pre>
+$ sed -i -e 's/Copyright c 2012/Copyright \&amp;copy; 2012/g' *.html
+$ git add *.html
+$ git commit -m "use copyright entity"
+[master 898456f] use copyright entity
+ 10 files changed, 10 insertions(+), 10 deletions(-)
+</pre>
+      <h3>修正内容の反映</h3>
+      <p>修正内容を反映させるには 2 つの方法があります。linuxmint-jp-www@linuxmint-jp.net 宛に patch を送信して commit を依頼する方法と、リポジトリに直接 commit する方法です。</p>
+      <p>commit を依頼する場合、linuxmint-jp-www@linuxmint-jp.net に patch を送信します。送信する patch は以下のように作成します。メールには base64 でエンコードされた添付ファイルとして patch を添付します。patch の内容はチェックの後にリポジトリに取り込まれます。</p>
+      <pre>
+$ git format-patch origin
+0001-use-copyright-entity.patch
+</pre>
+      <p>リポジトリに直接 commit する場合、以下のようにします。これを行うにはリポジトリの読み書き権限が必要です。</p>
+      <pre>
+$ git push origin
+</pre>
+      <p>github のリポジトリに取り込まれた内容は 6 時間毎にサイト上に反映されます。</p>
+      <h3>git リポジトリの読み書きができるメンバーの登録申請</h3>
+      <p><a href="https://github.com/linuxmintjapan/WebSite">リポジトリ</a>の読み書きを行うにはリポジトリに対して github アカウントの紐付けが必要です。メンバー登録申請を行うには以下の情報を明記して linuxmint-jp-www@linuxmint-jp.net 宛にメールを送信してください。</p>
+      <ul>
+        <li><p>Linux Mint Japan メンバー名</p></li>
+        <li><p>github アカウント</p></li>
+      </ul>
+      <h2>Web ページ編集ルール</h2>
+      <ol>
+        <li>
+          <p>html ファイルのドキュメントタイプは html5 で <a href="http://www.w3.org/TR/html-polyglot/">Polyglot Markup: HTML-Compatible XHTML Documents</a> スタイルで書いてください。表記例は <a href="http://dev.w3.org/html5/html-xhtml-author-guide/SamplePage.html">A Sample Page Using Polglot Markup</a> 等の文書を参照してください。</p>
+        </li>
+        <li>
+          <p><a href="http://validator.w3.org/">The W3C Markup Validation Service</a> や <a href="http://validator.w3.org/unicorn/">Unicorn</a> 等のツールで構文に間違いが無い事を確認してください。</p>
+        </li>
+        <li>
+          <p>無意味な p タグ (単独の &lt;p&gt;&lt;/p&gt; 等) や無意味な div タグ (外側の入れ子に意味が無い &lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt; 等) を含めないでください。</p>
+        </li>
+        <li>
+          <p>単色や単純な模様や文字は画像ではなく CSS による表現を模索してください。</p>
+        </li>
+        <li>
+          <p>不適当な文書構造 (h* タグを見出し以外の場所に使うなど) は止めてください。</p>
+        </li>
+      </ol>
+      <h2>日本語スタイル</h2>
+      <ol>
+        <li>
+          <p>英単語と日本語の間に半角の white space を入れてください。</p>
+        </li>
+      </ol>
+    </article>
+    <footer>
+      <address>
+Copyright c 2012 Linux Mint Japan All Rights Reserved.</address>
+    </footer>
+  </body>
+</html>
