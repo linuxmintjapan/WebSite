@@ -65,57 +65,37 @@
     </nav>
     <article id="contents">
       <h1 class="title">ダウンロード</h1>
-      <h2>Linux Mint のダウンロード (※重要: 公開を中断しています。誠に申し訳ありません。)</h2>
-      <p>Linux Mint の新しいリリース情報などはブログなどを参照してください。これらの ISO は本家サイトで配布している ISO の日本語に関する問題への対応を施し、さらにアプリケーションを日本語化されています。(※これらの ISO は日本の法律に抵触しないよう nocodecs 版をベースとしています。注意してください。)MATE エディションと Cinnamon エディションの違いはデスクトップの環境に違いがあるだけです。詳しくは<a href="feature.html">Linux Mint の特徴</a>を参照して下さい。</p>
-      <p>注意:これらの ISO イメージは CD には収まりきりません。DVD 又は USB をお使いになられてください。</p>
-      <p>ライセンス:  <a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License version 3.0 (GPLv3)</a></p>
-      <p>
-        <a href="isoimage/linuxmint-13-ja-mate-dvd-nocodecs-32bit.iso">
-          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/mate32.png"/>
-        </a>
-        <a href="&#9;isoimage/linuxmint-13-ja-mate-dvd-nocodecs-64bit.iso">
-          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/mate64.png"/>
-        </a>
-        <a href="isoimage/linuxmint-13-ja-cinnamon-dvd-nocodecs-32bit.iso">
-          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/Cinnamon32.png"/>
-        </a>
-        <a href="&#9;isoimage/linuxmint-13-ja-cinnamon-dvd-nocodecs-64bit.iso">
-          <img style="max-width: 220px" alt="MATE 32 ビット" src="img2/Cinnamon64.png"/>
-        </a>
+      <h2>Linux Mint のダウンロード</h2>
+      <p>Linux Mint の新しいリリース情報などはブログなどを参照してください。ダウンロードページに行くといろいろなエディションがありますが殆どの場合はデスクトップ環境の差があるだけです。MATE エディションと Cinnamon エディションの違いについてはは<a href="feature.html">Linux Mint の特徴</a>を参照して下さい。      どのエディションを利用するかわからなくなった場合は<strong>&quot;MATE No codecs	32-bit&quot;</strong>を利用して下さい。</p>
+      <p><a href="http://linuxmint.com/"><strong>http://linuxmint.com/</strong></a><br>
+      より自分の好きなエディションをダウンロードし、インストールして下さい。インストール方法については<br>
+      <a href="http://dev.linuxmint-jp.net/index.php/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%BA%E3%82%AC%E3%82%A4%E3%83%89"><strong>ユーザーズガイド</strong><br>
+      </a>を参照して下さい。
       </p>
-      <dl>
-        <dt>MATE 32bit</dt>
-        <dd>md5sum: 9bf1e645e970d65227f56a4bea995d00</dd>
-        <dt>MATE 64bit</dt>
-        <dd>md5sum: 4ebf09ec96fb32a1a7545e00da25b159</dd>
-        <dt>Cinnamon 32bit</dt>
-        <dd>md5sum: 46fb46c9ac06b3413b0701b67ab800de</dd>
-        <dt>Cinnamon 64bit</dt>
-        <dd>md5sum: 2747584d8bed42ed5a90ffe33a3d03a2</dd>
-      </dl>
-      <p>※ISO ファイルが正しくダウンロードされたことを確認するために、MD5SUM をチェックすることをお勧めいたします。</p>
+      <p>Linux Mint をインストールできた場合、下記のコマンドを実行し日本語化して下さい。</p>
       <h2>日本語化の方法</h2>
-      <p>本家サイトからの Linux Mint ISO をダウンロードした場合、日本語化がまだ不十分です。そういった場合 Linux Mint Japan の追加パッケージを利用し、日本語化パッケージをインストールすることによってそれらの問題は解決されることがあります。</p>
+      <p>本家サイトからの Linux Mint ISO をダウンロードした場合、日本語化がまだ不十分です。例としてアプリケーションの言語が英語になる、日本語入力ができない、などの問題があります。そういった場合 Linux Mint Japan の追加パッケージを利用し、日本語化パッケージをインストールすることによってそれらの問題は解決されることがあります。</p>
       <h3>インストール方法</h3>
-      <p>まず端末上でこれらのコマンドを実行してください。  </p>
-      <pre># wget -q http://linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
-# sudo wget http://linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
-# sudo apt-get update
-# sudo apt-get dist-upgrade
+      <p>まず端末上でこれらのコマンドを実行してください。  端末の起動方法は、メニューを開き、プログラムの一覧の&quot;アクセサリ&quot;を開きその中に&quot;端末&quot;があるのでそれをクリックし起動して下さい。</p>
+      <p>行の最初の&quot;$&quot;は入力する必要はありません。</p>
+      <pre>$ wget -q http://linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
+$ sudo wget http://linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
+$ sudo apt-get update
+$ sudo apt-get dist-upgrade
 </pre>
-      <p>次に自分の Linux Mint のエディションにあわせて適切なコマンドを実行して下さい。</p>
+      <p>次に自分のインストールした Linux Mint のエディションにあわせて適切なコマンドを実行して下さい。</p>
       <dl>
         <dt>MATE, Cinnamon, Xfce の場合</dt>
         <dd>
-          <pre># sudo apt-get install mint-gnome-ja</pre>
+          <pre>$ sudo apt-get install mint-gnome-ja</pre>
         </dd>
         <dt>KDE の場合</dt>
         <dd>
-          <pre># sudo apt-get install mint-kde-ja</pre>
+          <pre>$ sudo apt-get install mint-kde-ja</pre>
         </dd>
         <dt>LMDE の場合</dt>
         <dd>
-          <pre># sudo apt-get install mint-lmde-ja</pre>
+          <pre>$ sudo apt-get install mint-lmde-ja</pre>
         </dd>
       </dl>
     </article>
