@@ -103,90 +103,74 @@
 </script> <article class="columnA" id="contents">
       <h1 class="title">HOME</h1>
       <div class="article_div">
-        <h2>MintBox Basic の 2 割引セール</h2>
-        <p>2013 年 2 月 2 日 (土曜日)
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=136" data-text="MintBox Basic の 2 割引セール #linuxmint #LMJP  " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </p>
-        <p><a href="http://www.fit-pc.com/web/purchase/order-direct-mintbox/"><img class="alignnone" alt="" src="http://www.linuxmint.com/tmp/blog/2307/thumb_1.png" width="426" height="168" /></a></p>
-        <p>CompuLab との協力で、MintBox Basic が 2 割引になる新年セールを開始しました。販売価格は $476 から $379 に下がります。
-        </p>
-        <p>
-        mintBox に関するより詳しい情報は以下のページをご覧ください: <a href="http://blog.linuxmint.com/?p=2055">http://blog.linuxmint.com/?p=2055</a>
-        </p>
-        <p>
-          <a href="http://blog.linuxmint-jp.net/?p=136">もっと読む...</a>
-        </p>
-      </div>
-      
-      <div class="article_div">
-        <h2>Linux Mint における Steam とゲーム</h2>
-        <p>2013 年 1 月 30 日 (水曜日)
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=124" data-text="Linux Mint における Steam とゲーム http://linuxmint-jp.net/ " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
+        <h2>MDM による HTML5 のログインスクリーン</h2>
+        <p>2013 年 3 月 2 日 (土曜日)
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=151" data-text="MDM による HTML5 のログインスクリーン http://linuxmint-jp.net/ " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p>ゲームは IT 産業にとって成長が著しく、最も活気があり、興奮させ、革新的なものの一形式です。2012 年は素晴らしい年でした。670 億ドルの世界市場を持つ複数のゲーム制作会社が最も才能のある開発者、芸術家、脚本家、専門家を雇用し、豊富で高品質なゲームを提供しました。潤沢な予算と高い生産能力のおかげで、今日では良い映画を見つけるよりも簡単に良いゲームを選ぶことができるようになりつつあります。</p>
-<p>Linux には“キラーアプリ”がある一方でゲームに関しては完璧には Linux に移行することができない理由の上位に挙げられます。2012 年には 15 作品のゲームがMetacritic で 90% 以上の評価を獲得しましたが、それらの内 Linux でリリースされたゲームは 1 作品もありませんでした。</p>
-<p>とは言うものの、良いニュースもあります。Linux でゲームをする人の将来は少し明るいものになるかもしれません。</p>
-        <p>
-          <a href="http://blog.linuxmint-jp.net/?p=124">もっと読む...</a>
+<p>現在の MDM は HTML5 のテーマをサポートしています。これにより、テーマを作成するデザイナーはアニメーション、ダイナミズム、すでにウェブデザイナーが利用している全ての技術を用いて美しいログインスクリーンをデザインすることができます!</p>
+<p><strong>MDM に関する前書きと予備知識</strong></p>
+<p>MDM は Linux Mint のデフォルトディスプレーマネージャです。MDM はログインスクリーンおよび認証とデスクトップセッションの起動を担当するソフトウェアです。</p>
+<p>MDM では “greeter” の別名でも知られる 3 つの異なるログインスクリーンが利用できます。</p>
+<p>“GTK” greeter は GTK ダイアログで作成された単純なログインスクリーンです。以下のようなものです:</p>
+<p><a href="http://www.linuxmint.com/tmp/blog/2327/mdmlogin.png"><img class="alignnone" alt="" src="http://www.linuxmint.com/tmp/blog/2327/thumb_mdmlogin.png" width="426" height="270" /></a></p>
+<p style="text-align: center;"><em><strong>GTK greeter、きれいで単純</strong></em></p>
+<p>“GDM” greeter はキャンバスを使うログインスクリーンで、“GDM テーマ”の別名でも知られる XML テーマと互換性があります。“GDM” greeter はおそらく現在利用しているログインスクリーンであり、利用しているテーマごとに全く違う見た目になります。例えば、Arc-Brave-Userlist テーマを使った場合の GDM greeter は以下のようになります:</p>
+<p><a href="http://www.linuxmint.com/tmp/blog/2327/mdmgreeter.png"><img class="alignnone" alt="" src="http://www.linuxmint.com/tmp/blog/2327/thumb_mdmgreeter.png" width="426" height="276" /></a></p>
+<p style="text-align: center;"><em><strong>GDM greeter、見栄えがよく、テーマごとに見た目が異なる</strong></em></p>
+<p>“HTML” greeter は webkit を使う新しいログインスクリーンで、HTML で書かれたテーマと互換性があります。開発チームがデザインしたテーマの例は以下のようになります:</p>
+<p><a href="http://www.linuxmint.com/tmp/blog/2327/mdmwebkit.png"><img class="alignnone" alt="" src="http://www.linuxmint.com/tmp/blog/2327/thumb_mdmwebkit.png" width="426" height="276" /></a></p>
+<p style="text-align: center;"><strong><em>HTML greeter、見栄えがよく、対話的で作成が簡単</em></strong></p>
+<p>このテーマは Web デザイナーではなく MDM/Mint 開発者がデザインしたものであるため見栄えが悪く感じるかもしれません。このテーマは HTML、CSS、Javascript、Bootstrap、JQuery を利用して作成されました。</p>
+<p>上の画像はただのスクリーンショットですが、ログインダイアログに対して透過効果が利用されており、マウスカーソルがユーザ画像に重なったときにユーザ画像を回転させる効果が使われていることがわかります。</p>
+          <a href="http://blog.linuxmint-jp.net/?p=151">もっと読む...</a>
         </p>
       </div> 
       <div class="article_div">
-        <h2>Linux Mint 15 “Olivia”</h2>
-        
-        
-        <p>2012 年 1 月 30 日 (水曜日) <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=121" data-text="Linux Mint 15 “Olivia” http://linuxmint-jp.net/ " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p>Linux Mint 15 は“Olivia”と命名される予定で、2013年5月末に利用可能になる予定です。</p>
-<p>Olivia は <em>oh-LIV-ee-ah</em> (オリヴィア) と発音します。Olivia の語源はラテン語で、意味は“オリーブの木”です。オリーブの木は豊穣、美しさ、品格の象徴です。</p>
-<p>Linux Mint 15 “Olivia” は以下のエディションが提供されます:</p>
-<ul>
-<li>Cinnamon</li>
-<li>MATE</li>
-<li>KDE</li>
-<li>Xfce</li>
-</ul>
-        <p>
-          <a href="http://blog.linuxmint-jp.net/?p=121">もっと読む...</a>
-        </p>
-      </div>
-      <div class="article_div">
         <h2>月間報告 – 2013 年 1 月</h2>
-        <p>2012 年 2 月 2 日 (土曜日)
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=129" data-text="月間報告 – 2013 年 1 月 http://linuxmint-jp.net/ " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </p>
+        
+        
+        <p>2013 年 3 月 2 日 (土曜日) <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=149" data-text="月間報告 – 2013 年 1 月 http://linuxmint-jp.net/ " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
         <p><strong>ランキング:</strong></p>
 <ul>
-<li>Distrowatch (人気ランキング): 3575 (第 1 位)</li>
-<li>Alexa (ウェブサイトランキング): 第 6,202 位</li>
+<li>Distrowatch (人気ランキング): 3694 (1位)</li>
+<li>Alexa (ウェブサイトランキング): 6,239位</li>
 </ul>
 <p><strong>イベント:</strong></p>
 <ul>
-<li><a href="http://blog.linuxmint.com/?p=2205">Linux Mint 14 “Nadia” KDE がリリースされました</a></li>
-<li><a href="http://blog.linuxmint.com/?p=2216">Linux Mint 14 “Nadia” Xfce がリリースされました</a></li>
-<li><a href="http://blog.linuxmint.com/?p=2254">LMDE アップデートパック 6 がリリースされました</a></li>
-<li><a href="http://blog.linuxmint.com/?p=2252">The Linux Mint 14 OEM版のインストールディスクがリリースされました</a></li>
-<li><a href="http://blog.linuxmint.com/?p=2246">Linux Mint 14 “Nadia” Xfce RC がリリースされました</a></li>
-<li><a href="http://blog.linuxmint.com/?p=2244">Linux Mint 14 “Nadia” KDE RC がリリースされました</a></li>
+<li><a href="http://blog.linuxmint.com/?p=2299">Linux Mint 15 のコードネームが “Olivia" になりました;</a></li>
+<li><a href="http://blog.linuxmint.com/?p=2307">mintBox basic の価格が 2 割引きになりました</a></li>
 </ul>
 <p><strong>最近の開発:</strong></p>
-<p>開発はとても楽しく、開発を始めるためにはそれほど高いハードルがあるわけではありません。もしチームに参加したければ、遠慮なく <a href="http://github.com/linuxmint">http://github.com/linuxmint</a> で開発状況をフォローして、さらに #linuxmint-dev (irc.spotchat.org上の) チャンネルに参加して開発者とおしゃべりしてみてください。</p>
-<p>今月は’ LMDE インストーラに実装された新機能の一部を簡単にご紹介します。</p>
-<p>タイムゾーンの選択画面がグラフィカルになり、世界地図を表示するようになりました:</p>
-<div><a href="http://www.linuxmint.com/tmp/blog/2275/1.png"><img class="aligncenter" alt="Picture" src="http://www.linuxmint.com/tmp/blog/2275/thumb_1.png" width="426" height="319"/></a></div>
-<p>キーボード選択画面では選択されたキーボードレイアウトをグラフィカルに表示するようになりました:</p>
-<div><a href="http://www.linuxmint.com/tmp/blog/2275/2.png"><img class="aligncenter" alt="Picture" src="http://www.linuxmint.com/tmp/blog/2275/thumb_2.png" width="426" height="319" /></a></div>
-<p>O“ユーザ情報” 画面では、ログイン画面やロック画面で利用されるユーザ画像<br />
-を選択できるようになりました。ウェブカメラを持っている場合は “写真を撮る” ボタンをクリックして自分の写真を撮れるようになりました。</p>
-<div><a href="http://www.linuxmint.com/tmp/blog/2275/3.png"><img class="aligncenter" alt="Picture" src="http://www.linuxmint.com/tmp/blog/2275/thumb_3.png" width="426" height="319" /></a></div>
-<p>インストーラには Schoelje さんと Bluematt さんによる改良も含まれています:</p>
+<p>開発はとても楽しく、開発を始めるためにはそれほど高いハードルがあるわけ<br />
+ではありません。もしチームに参加したければ、遠慮なく <a href="http://github.com/linuxmint">http://github.com/linuxmint</a> で開発状況をフォローして、さらに #linuxmint-dev (irc.spotchat.org) チャンネルに参加して開発者とおしゃ<br />
+べりしてみてください。</p>
+        <p>
+          <a href="http://blog.linuxmint-jp.net/?p=149">もっと読む...</a>
+        </p>
+      </div>
+      <div class="article_div">
+        <h2>Linux Mint Debian 201303 リリース候補版がリリースされました!</h2>
+        <p>2013 年 2 月 25 日 (月曜日)
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://blog.linuxmint-jp.net/?p=147" data-text="Linux Mint Debian 201303 リリース候補版がリリースされました! http://linuxmint-jp.net/ " data-via="linuxmint_japan" data-lang="ja">ツイート</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </p>
+        <p>開発チームは LMDE 201303 リリース候補版のリリースについて発表します。</p>
+<p><strong>スクリーンショット</strong></p>
+<p style="text-align: center;"><a href="http://www.linuxmint.com/pictures/screenshots/lmde201303/mate.png"><img title="LMDE 201303 MATE" alt="" src="http://www.linuxmint.com/pictures/screenshots/lmde201303/thumb_mate.png" width="426" height="326" /></a><br />
+<em>LMDE 201303 MATE Edition</em></p>
+<p style="text-align: center;"><a href="http://www.linuxmint.com/pictures/screenshots/lmde201303/cinnamon.png"><img title="LMDE 201303 Cinnamon" alt="" src="http://www.linuxmint.com/pictures/screenshots/lmde201303/thumb_cinnamon.png" width="426" height="326" /></a></p>
+<p style="text-align: center;"><em>LMDE 201303 Cinnamon 版</em></p>
+<p>&nbsp;</p>
+<p><strong>主な特徴</strong></p>
 <ul>
-<li>UI の改良</li>
-<li>スライドショー</li>
-<li>手動のパーティション分割と複数のディスクへのインストールのサポート</li>
+<li>アップデートパック 6</li>
+<li>MATE 1.4</li>
+<li>Cinnamon 1.6</li>
+<li>インストーラの改良 (グラフィカルなタイムゾーンとキーボードの選択、複数の HDD に対するインストールのサポート、スライドショー、ウェブカメラ、顔画像のサポート)</li>
+<li>Plymouth スプラッシュスクリーン</li>
 </ul>
-          <a href="http://blog.linuxmint-jp.net/?p=129">もっと読む...</a>
+          <a href="http://blog.linuxmint-jp.net/?p=147">もっと読む...</a>
         </p>
       </div>
     </article>
