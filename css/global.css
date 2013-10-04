@@ -55,6 +55,7 @@ dt {
 	height: 80px;
 	margin: 0;
 	padding: 0;
+F
 	display: block;
 	clear: both;
 }
@@ -191,4 +192,7 @@ twitter{
 		float: left;
 		width: auto;
 	}
+}
+table{
+width:487px;
 }

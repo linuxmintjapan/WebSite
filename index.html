@@ -1,3 +1,4 @@
+<?php require('../blog/wp-blog-header.php'); ?>
 <!DOCTYPE html>
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
   <head>
@@ -104,229 +105,23 @@ direction:'opacity' } );
 object.start( true, _lofmain.getElement('.preload') );
 </script> <article id="contents" class="columnA">
       <h1 class="title">HOME</h1>
+<?php
+$posts = get_posts("numberposts=3&category=&orderby=post_date&offset=0");
+foreach ($posts as $post):
+setup_postdata($post);
+?>
       <div class="article_div">
-        <h2>Linux Mint 15 “Olivia” KDE 版がリリースされました!</h2>
-        <p>2013 年 7 月 31 日 (水曜日) <a data-lang="ja" data-via="linuxmint_japan" data-text="Linux Mint 15 Olivia KDE 版がリリースされました!” http://linuxmint-jp.net/ "
-            data-url="http://blog.linuxmint-jp.net/?p=224" class="twitter-share-button"
+<h2>
+<?php echo($post->post_title); ?>
+</h2>
+<p><?php the_date("Y 年 n 月 j 日 (l)"); ?> <a data-lang="ja" data-via="linuxmint_japan" data-text="<?php echo($post->post_title); ?> http://linuxmint-jp.net/ "
+            data-url="<?php the_permalink() ?>" class="twitter-share-button"
             href="https://twitter.com/share">ツイート</a><br />
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p></p>
-        <p>開発チームは Linux Mint 15 “Olivia” KDE 版のリリースについて発表します。</p>
-        <p></p>
-        <center><small><a href="http://www.linuxmint.com/pictures/screenshots/olivia/kde.png"><img
-                width="426" height="318" alt="" src="http://www.linuxmint.com/pictures/screenshots/olivia/thumb_kde.png" /></a></small></center>
-        <p></p>
-        <p style="text-align: center;"><strong><em>Linux Mint 15 Olivia</em></strong></p>
-        <p>KDE は活気があり、革新的で、進歩的で、現代風で、フル装備のデスクトップ環境です。KDE 版は KDE 4.10 に加えて最新の
-          Linux Mint リリースになされた全ての改善が反映されています。</p>
-        <p><strong>一目で分かる新機能:</strong></p>
-        <ul>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#kde">KDE
-              4.10</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mdm">MDM</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mintsources">ソ
-              フトウェアソース</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mintdrivers">ド
-              ライバマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mintinstall">ソ
-              フトウェアマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#system">シ
-              ステムの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#artwork">アー
-              トワークの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#upstream">アッ
-              プストリームに対して行われた追加要素の取り込み</a></li>
-        </ul>
-        <p>概要の全てと新機能のスクリーンショットは以下のページでご確認ください: “<a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php">Linux
-            Mint 15 KDE の新機能</a>“.</p>
-        <p><strong>重要な情報:</strong></p>
-        <ul>
-          <li>32 ビット版の ISO イメージの場合は PAE が必要</li>
-          <li>EFI のサポート</li>
-        </ul>
-        <p> <a href="http://blog.linuxmint-jp.net/?p=226">もっと読む...</a> </p>
+<?php the_content(); ?>
+        <p> <a href="<?php the_permalink() ?>">Linux Mint Japan Blog</a> </p>
       </div>
-      <div class="article_div">
-        <h2>Linux Mint 15 “Olivia” Xfce 版がリリースされました!</h2>
-        <p>2013 年 7 月 22 日 (月曜日) <a data-lang="ja" data-via="linuxmint_japan" data-text="Linux Mint 15 “Olivia” Xfce 版がリリースされました!” http://linuxmint-jp.net/ "
-            data-url="http://blog.linuxmint-jp.net/?p=224" class="twitter-share-button"
-            href="https://twitter.com/share">ツイート</a><br />
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p></p>
-        <p>開発チームは Linux Mint 15 “Olivia” Xfce 版のリリースについて発表します。</p>
-        <p></p>
-        <center><small><a href="http://www.linuxmint.com/pictures/screenshots/olivia/xfce.png"><img
-                width="426" height="299" src="http://www.linuxmint.com/pictures/screenshots/olivia/thumb_xfce.png"
-                alt="" /></a></small></center>
-        <p></p>
-        <p style="text-align: center;"><strong><em>Linux Mint 15 Olivia</em></strong></p>
-        <p>Xfce は高速でシステムリソースを大きく消費しないことを目標にしている軽量のデスクトップ環境です。それにもかかわらず、Xfce
-          は見た目の魅力とユーザの利便性を失っていません。Xfce 版は Xfce 4.10 に加えて最新の LinuxMint
-          リリースになされた全ての改善が反映されています。</p>
-        <p><strong>一目で分かる新機能:</strong></p>
-        <ul>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#xfce">Xfce
-              4.10</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mdm">MDM</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mintsources">ソ
-              フトウェアソース</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mintdrivers">ド
-              ライバマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mintinstall">ソ
-              フトウェアマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#system">シ
-              ステムの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#artwork">アー
-              トワークの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#upstream">アッ
-              プストリームに対して行われた追加要素の取り込み</a></li>
-        </ul>
-        <p>概要の全てと新機能のスクリーンショットは以下のページでご確認ください: “<a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php">Linux
-            Mint 15 Xfce の新機能</a>“.</p>
-        <p><strong>重要な情報:</strong></p>
-        <ul>
-          <li>32 ビット版の ISO イメージの場合は PAE が必要</li>
-          <li>EFI のサポート</li>
-          <li>ローカルリポジトリと GNOME PPP</li>
-        </ul>
-        <p> <a href="http://blog.linuxmint-jp.net/?p=224">もっと読む...</a> </p>
-      </div>
-      <div class="article_div">
-        <h2>新しい MintBox のプレビュー</h2>
-        <p>2013 年 7 月 4 日 (木曜日) <a data-lang="ja" data-via="linuxmint_japan" data-text="新しい MintBox のプレビュー” http://linuxmint-jp.net/ "
-            data-url="http://blog.linuxmint-jp.net/?p=216" class="twitter-share-button"
-            href="https://twitter.com/share">ツイート</a><br />
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p></p>
-        <p>Linux Mint 15 Olivia がリリースされ、CompuLab はホームページ<a href="http://www.fit-pc.com/">http://www.fit-pc.com</a>を
-          更新して、以下のバナーが掲載されるようになりました:</p>
-        <p><a href="http://www.linuxmint.com/tmp/blog/2383/page.jpg"><img width="400"
-              height="142" alt="" src="http://www.linuxmint.com/tmp/blog/2383/thumb_page.jpg"
-              style="border: 1px solid black;" /></a></p>
-        <p>開発チームは常に CompuLab のスタッフと素晴らしい関係を築いており、新しい MintBox
-          の開発に尽力してきました。しかしこれはおどろくべきことで、この点について開発チームに感謝しています。両者は相互に尊敬と称賛の念を抱いており、開発チームは
-          CompuLab と一緒にした仕事に誇りを持っています。</p>
-        <p><a href="http://www.linuxmint.com/tmp/blog/2383/mintbox.jpg"><img width="400"
-              height="204" alt="" src="http://www.linuxmint.com/tmp/blog/2383/thumb_mintbox.jpg"
-              style="border: 1px solid black;" class="alignnone" /></a></p>
-        <p>MintBox 2 に関するいくつかの刺激的なニュースを共有したいと思います...</p>
-        <ul>
-          <li>CompuLab と Linux Mint は MintBox 2 の価格に占める利益率の割合を減らしました (Linux Mint
-            は 10 % から 5 % に減らしました)</li>
-          <li>CompuLab はヨーロッパの顧客が MintBox 2 を Amazon.de から注文できるように努力しています
-            (つまり税金および関税がかからなくなり、価格に送料が含まれるようになります)</li>
-          <li>MintBox 2 は Intel i5 を搭載し、ほぼ同じ価格で MintBox Pro の 4
-            倍以上の性能を持つようになる予定です</li>
-        </ul>
-        <p> <a href="http://blog.linuxmint-jp.net/?p=216">もっと読む...</a> </p>
-      </div>
-      <div class="article_div">
-        <h2>Linux Mint 15 “Olivia” Xfce RC 版がリリースされました!</h2>
-        <p>2013 年 7 月 2 日 (火曜日) <a data-lang="ja" data-via="linuxmint_japan" data-text="Linux Mint 15 “Olivia” Xfce RC 版がリリースされました!” http://linuxmint-jp.net/ "
-            data-url="http://blog.linuxmint-jp.net/?p=212" class="twitter-share-button"
-            href="https://twitter.com/share">ツイート</a><br />
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p></p>
-        <p>開発チームは Linux Mint 15 “Olivia” Xfce RC 版のリリースについて発表します。</p>
-        <p></p>
-        <center><small><a href="http://www.linuxmint.com/pictures/screenshots/olivia/xfce.png"><img
-                width="426" height="299" src="http://www.linuxmint.com/pictures/screenshots/olivia/thumb_xfce.png"
-                alt="" /></a></small></center>
-        <p></p>
-        <p style="text-align: center;"><strong><em>Linux Mint 15 Olivia</em></strong></p>
-        <p>Xfce は高速でシステムリソースを大きく消費しないことを目標にしている軽量のデスクトップ環境です。それにもかかわらず、Xfce
-          は見た目の魅力とユーザの利便性を失っていません。Xfce 版は Xfce 4.10 に加えて最新の LinuxMint
-          リリースになされた全ての改善が反映されています。</p>
-        <p><strong>一目で分かる新機能:</strong></p>
-        <ul>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#xfce">Xfce
-              4.10</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mdm">MDM</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mintsources">ソ
-              フトウェアソース</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mintdrivers">ド
-              ライバマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#mintinstall">ソ
-              フトウェアマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#system">シ
-              ステムの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#artwork">アー
-              トワークの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php#upstream">アッ
-              プストリームに対して行われた追加要素の取り込み</a></li>
-        </ul>
-        <p>概要の全てと新機能のスクリーンショットは以下のページでご確認ください: “<a href="http://www.linuxmint.com/rel_olivia_xfce_whatsnew.php">Linux
-            Mint 15 Xfce の新機能</a>“.</p>
-        <p><strong>重要な情報:</strong></p>
-        <ul>
-          <li>32 ビット版の ISO イメージの場合は PAE が必要</li>
-          <li>EFI のサポート</li>
-          <li>ローカルリポジトリと GNOME PPP</li>
-        </ul>
-        <p> <a href="http://blog.linuxmint-jp.net/?p=212">もっと読む...</a> </p>
-      </div>
-      <div class="article_div">
-        <h2>Linux Mint 15 “Olivia” KDE RC 版がリリースされました!</h2>
-        <p>2013 年 7 月 2 日 (火曜日) <a data-lang="ja" data-via="linuxmint_japan" data-text="Linux Mint 15 “Olivia” KDE RC 版がリリースされました!” http://linuxmint-jp.net/ "
-            data-url="http://blog.linuxmint-jp.net/?p=208" class="twitter-share-button"
-            href="https://twitter.com/share">ツイート</a><br />
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p></p>
-        <p>開発チームは Linux Mint 15 “Olivia” KDE RC 版のリリースについて発表します。</p>
-        <p></p>
-        <center><small><a href="http://www.linuxmint.com/pictures/screenshots/olivia/kde.png"><img
-                width="426" height="318" src="http://www.linuxmint.com/pictures/screenshots/olivia/thumb_kde.png"
-                alt="" /></a></small></center>
-        <p></p>
-        <p style="text-align: center;"><strong><em>Linux Mint 15 Olivia</em></strong></p>
-        <p>KDE は活気があり、革新的で、進歩的で、現代風で、フル装備のデスクトップ環境です。KDE 版は KDE 4.10 に加えて最新の
-          Linux Mint リリースになされた全ての改善が反映されています。</p>
-        <p><strong>一目で分かる新機能:</strong></p>
-        <ul>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#kde">KDE
-              4.10</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mdm">MDM</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mintsources">ソ
-              フトウェアソース</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mintdrivers">ド
-              ライバマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#mintinstall">ソ
-              フトウェアマネージャ</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#system">シ
-              ステムの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#artwork">アー
-              トワークの改良</a></li>
-          <li><a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php#upstream">アッ
-              プストリームに対して行われた追加要素の取り込み</a></li>
-        </ul>
-        <p>概要の全てと新機能のスクリーンショットは以下のページでご確認ください:“<a href="http://www.linuxmint.com/rel_olivia_kde_whatsnew.php">Linux
-            Mint 15 KDE の新機能</a>”.</p>
-        <p><strong>重要な情報:</strong></p>
-        <ul>
-          <li>32 ビット版の ISO イメージの場合は PAE が必要</li>
-          <li>EFI のサポート</li>
-        </ul>
-        <p> <a href="http://blog.linuxmint-jp.net/?p=208">もっと読む...</a> </p>
-      </div>
-      <div class="article_div">
-        <h2>Linux Mint 16 “Petra”</h2>
-        <p>2013 年 6 月 23 日 (日曜日) <a data-lang="ja" data-via="linuxmint_japan" data-text="Linux Mint 16 “Petra” http://linuxmint-jp.net/ "
-            data-url="http://blog.linuxmint-jp.net/?p=201" class="twitter-share-button"
-            href="https://twitter.com/share">ツイート</a><br />
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
-        <p></p>
-        <p>Linux Mint 16 は “Petra” と名付けられ、2013 年 11 月末にリリースされる予定です。</p>
-        <p>Petra、ギリシャ語で “πέτρα”、とは石または岩という意味です。Petra
-          はドイツ、クロアチア、ハンガリー、チェコ共和国ではありふれた名前です。</p>
-        <p>Linux Mint 16 “Petra” では以下のエディションがリリースされる予定です:</p>
-        <ul>
-          <li>Cinnamon</li>
-          <li>MATE</li>
-          <li>KDE</li>
-          <li>Xfce</li>
-        </ul>
-        <p> <a href="http://blog.linuxmint-jp.net/?p=201">もっと読む...</a> </p>
-      </div>
+<?php endforeach; ?>
     </article>
     <aside class="columnB">
       <h2>リリース情報</h2>
