@@ -78,8 +78,10 @@
       <h3>インストール方法</h3>
       <p>まず端末上でこれらのコマンドを実行してください。  端末の起動方法は、メニューを開き、プログラムの一覧の&quot;アクセサリ&quot;を開きその中に&quot;端末&quot;があるのでそれをクリックし起動して下さい。</p>
       <p>行の最初の&quot;$&quot;は入力する必要はありません。</p>
-      <pre>$ wget -q http://linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
-$ sudo wget http://linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
+      <p style="color: red;">重要! ：パッケージのパスが変わりました。（旧パッケージのメンテナンスが継続できないため）。これから日本語化する方は下記のパスを使用してください。なお、すでに旧パッケージをインストールした方は無視してください。
+      </p>
+      <pre>$ wget -q http://packages.linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
+$ sudo wget http://packages.linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
 $ sudo apt-get update
 $ sudo apt-get dist-upgrade
 </pre>
