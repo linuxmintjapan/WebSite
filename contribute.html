@@ -126,7 +126,7 @@ $ git commit -m "describe what you did"
         </dd>
       </dl>
       <h3>修正内容の反映</h3>
-      <p>修正内容を反映させるには 2 つの方法があります。linuxmint-jp-www@linuxmint-jp.net 宛に patch を送信して commit を依頼する方法と、リポジトリに直接 commit する方法です。</p>
+      <p>修正内容を反映させるには 3 つの方法があります。linuxmint-jp-www@linuxmint-jp.net 宛に patch を送信して commit を依頼する方法と、リポジトリに直接 commit する方法、github 上でプルリクエストを作成する方法です。</p>
       <p>commit を依頼する場合、linuxmint-jp-www@linuxmint-jp.net に patch を送信します。送信する patch は以下のように作成します。メールには base64 でエンコードされた添付ファイルとして patch を添付します (インラインテキストで送信する事により意図せずにエンコーディングが変わる事を防ぐため)。patch の内容はチェックの後にリポジトリに取り込まれます。</p>
       <pre>
 $ git format-patch origin
@@ -144,6 +144,7 @@ fatal: remote error:
   You can't push to git://github.com/linuxmintjapan/WebSite.git
   Use git@github.com:linuxmintjapan/WebSite.git
 </pre>
+      <p>github 上でプルリクエストを作成して修正内容の反映を依頼することもできます。詳しくは <a href="https://help.github.com/articles/using-pull-requests">Using pull requests</a> を参照してください。</p>
       <p>github のリポジトリに取り込まれた内容は 6 時間毎にサイト上に反映されます。</p>
       <h3>git リポジトリの読み書きができるメンバーの登録申請</h3>
       <p><a href="https://github.com/linuxmintjapan/WebSite">リポジトリ</a>の読み書きを行うにはリポジトリに対して github アカウントの紐付けが必要です。メンバー登録申請を行うには以下の情報を明記して linuxmint-jp-www@linuxmint-jp.net 宛にメールを送信してください。</p>
