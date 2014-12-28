@@ -92,6 +92,7 @@ dt {
 	margin: 0;
 	padding: 1em 0.5em;
 	display: block;
+	font-size: 12px;
 }
 #menucontents ul li a:hover {
 	background-color: #993322;
