@@ -65,46 +65,11 @@
         どのエディションを利用するかわからない場合は <strong>&quot;MATE Edition&quot;</strong> を利用して下さい。
       </p>
       <p>
-        <a href="http://linuxmint.com/"><strong>http://linuxmint.com/</strong></a><br>
+        <a href="https://linuxmint.com/"><strong>https://linuxmint.com/</strong></a><br>
         より自分の好きなエディションをダウンロードし、インストールして下さい。インストール方法については<br>
         <a href="documentation.html"><strong>ユーザーズガイド</strong><br>
         </a>を参照して下さい。
       </p>
-      <p>
-        Linux Mint をインストールできた場合、下記のコマンドを実行し日本語化して下さい。
-      </p>
-
-      <h2>日本語化の方法</h2>
-      <p>
-        本家サイトからの Linux Mint ISO をダウンロードした場合、日本語化がまだ不十分です。
-        例としてアプリケーションの言語が英語になる、日本語入力ができない、などの問題があります。
-        そういった場合 Linux Mint Japan の追加パッケージを利用し、
-        日本語化パッケージをインストールすることによってそれらの問題は解決されることがあります。
-      </p>
-      <h3>インストール方法</h3>
-      <p>
-        まず端末上でこれらのコマンドを実行してください。  端末の起動方法は、メニューを開き、
-        プログラムの一覧の&quot;アクセサリ&quot;を開きその中に&quot;端末&quot;があるので
-        それをクリックし起動して下さい。
-      </p>
-      <p>行の最初の&quot;$&quot;は入力する必要はありません。</p>
-      <pre>$ wget -q http://packages.linuxmint-jp.net/linuxmint-ja-archive-keyring.gpg -O- | sudo apt-key add -
-$ sudo wget http://packages.linuxmint-jp.net/sources.list.d/linuxmint-ja.list -O /etc/apt/sources.list.d/linuxmint-ja.list
-$ sudo apt-get update
-$ sudo apt-get dist-upgrade</pre>
-      <p>次に自分のインストールした Linux Mint のエディションにあわせて適切なコマンドを実行して下さい。</p>
-
-      <dl>
-        <dt>MATE, Cinnamon, Xfce の場合</dt>
-        <dd><pre>$ sudo apt-get install mint-gnome-ja --install-recommends</pre></dd>
-
-        <dt>LMDE の場合</dt>
-        <dd>
-          <pre>$ sudo apt-get install mint-lmde-ja --install-recommends
-$ im-config -n fcitx</pre>
-        </dd>
-      </dl>
-      <p>最後に全ての更新を有効にするために再起動してください。</p>
     </article>
 
     <footer>
